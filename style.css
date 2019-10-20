@@ -28,9 +28,21 @@
   text-align: left;
 }
 
-.jumobtron{
-  align-items: center;
-  text-align: center;
+.jumbotron{
+  display: flex;
+  height: 100vh;
+}
+
+.weather{
+  order: 1;
+  flex-basis: 25%;
+  background-color: #F7B733;
+  padding: 10px;
+  line-height: 80px;
+}
+
+.forecast{
+  order:2;  
 }
 
 .main-content{
@@ -56,7 +68,7 @@
 }
 /*MEDIA  */
 
-@media only screen and (max-width: 411px) {
+@media only screen and (max-width: 580px) {
   #sidebar{
     width: 200px;
     height: auto;
@@ -65,6 +77,8 @@
   #sidebar h1 {
     font-size: 32px;
   }
-
-
+  .jumbotron{
+    display: block;
+    height: auto;
+  }
 }

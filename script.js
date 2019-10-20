@@ -58,9 +58,10 @@ $.ajax({
     console.log(data);
     cD += '<p>';
     cD += '<b>' + today + ' </b>';
-    cD += data.list[0].main.temp_max + '&degF';
-    cD += data.list[0].main.humidity;
-    cD += "<span> | " + data.list[0].weather[0].description + "</span>"; 
+    cD += '<p>Temp: ' + data.list[0].main.temp_max + '&degF </p>';
+    cD += '<p>Humidity: ' + data.list[0].main.humidity + '</p>';
+    cD += '<p>Wind Speed: ' + data.list[0].wind.speed + '</p>';
+    cD += '<p><span>' + data.list[0].weather[0].description + '</span></p>'; 
     cD += "<img src='https://openweathermap.org/img/w/" + data.list[0].weather[0].icon + ".png'>";
     cD += "</p>"
     $('.weather').html(cD);
