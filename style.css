@@ -1,0 +1,70 @@
+/*GENERAL*/
+.wrapper {
+  display: flex;
+  width: 100%;
+  align-items: stretch;
+}
+/*SIDEBAR*/
+#sidebar {
+  max-width: 250px;
+  background-color: #4ABDAC;
+  padding: 20px;
+  color: #fff;
+  min-height: 100vh;
+}
+
+#newCity{
+  width:100%;
+}
+
+#citySearch{
+  background: #F7B733;
+  width:100%;
+}
+
+.btn{
+  color: #fff;
+  display: block;
+  text-align: left;
+}
+
+.jumobtron{
+  align-items: center;
+  text-align: center;
+}
+
+.main-content{
+  width: 100%;
+  background: #DFDCe3;
+}
+
+.forecast ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left:0px;
+}
+
+.forecast ul li{
+  background: #fC4A1A;
+  justify-content: space-evenly;
+  margin: 20px;
+  padding:10px;
+  min-width: 80px;
+  border-radius: 10px;
+  color: #fff;
+}
+/*MEDIA  */
+
+@media only screen and (max-width: 411px) {
+  #sidebar{
+    width: 200px;
+    height: auto;
+  }
+
+  #sidebar h1 {
+    font-size: 32px;
+  }
+
+
+}
